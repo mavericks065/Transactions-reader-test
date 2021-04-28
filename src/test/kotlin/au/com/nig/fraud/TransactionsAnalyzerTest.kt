@@ -1,6 +1,5 @@
-package au.com.nig.fraudulentprogram
+package au.com.nig.fraud
 
-import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Assertions.*
 import org.spekframework.spek2.Spek
 import org.spekframework.spek2.style.specification.describe

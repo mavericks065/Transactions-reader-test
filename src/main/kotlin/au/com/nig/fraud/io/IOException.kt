@@ -1,3 +1,3 @@
-package au.com.nig.fraudulentprogram.io
+package au.com.nig.fraud.io
 
 class IOException(val msg: String) : Exception()

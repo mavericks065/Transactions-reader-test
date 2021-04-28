@@ -1,6 +1,6 @@
 package au.com.nig
 
-import au.com.nig.fraudulentprogram.TransactionsAnalyzer
+import au.com.nig.fraud.TransactionsAnalyzer
 import java.math.BigDecimal
 import java.util.logging.Level
 import java.util.logging.Logger

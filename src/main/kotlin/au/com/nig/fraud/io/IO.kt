@@ -1,4 +1,4 @@
-package au.com.nig.fraudulentprogram.io
+package au.com.nig.fraud.io
 
 import org.apache.commons.csv.CSVFormat
 import org.apache.commons.csv.CSVParser
