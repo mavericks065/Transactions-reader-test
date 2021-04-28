@@ -5,7 +5,8 @@ import java.math.BigDecimal
 
 object TransactionsAnalyzer {
     fun result(filePath: String, threshold: BigDecimal): String {
-        val fileContent = IO.readFile(filePath)
+        val transactions = IO.readFile(filePath)
+            .map { Transaction.mapToTransaction(it) }
 
         TODO()
     }
