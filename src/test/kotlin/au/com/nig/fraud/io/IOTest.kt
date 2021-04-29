@@ -1,7 +1,5 @@
 package au.com.nig.fraud.io
 
-import au.com.nig.fraud.io.IO
-import au.com.nig.fraud.io.IOException
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.assertThrows
 import org.spekframework.spek2.Spek
