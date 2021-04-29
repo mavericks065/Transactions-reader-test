@@ -1,4 +1,4 @@
-package au.com.nig.fraud
+package au.com.nig.fraud.model
 
 import org.apache.commons.csv.CSVRecord
 import java.math.BigDecimal

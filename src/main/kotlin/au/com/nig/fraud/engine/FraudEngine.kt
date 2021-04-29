@@ -1,5 +1,7 @@
-package au.com.nig.fraud
+package au.com.nig.fraud.engine
 
+import au.com.nig.fraud.model.FraudResult
+import au.com.nig.fraud.model.Transaction
 import java.math.BigDecimal
 
 object FraudEngine {
@@ -17,8 +19,7 @@ object FraudEngine {
         return FraudResult(fraudCards.toList())
     }
 
-    fun isCardFraudOn24HoursPeriod(transactions: List<Transaction>, threshold: BigDecimal): Boolean {
-
+    private fun isCardFraudOn24HoursPeriod(transactions: List<Transaction>, threshold: BigDecimal): Boolean {
         var isCardFraud = false
         for (transaction in transactions) {
             val dateLimit = transaction.date.plusDays(1L)
@@ -34,5 +35,3 @@ object FraudEngine {
         return isCardFraud
     }
 }
-
-data class FraudResult(val fraudulentCards: List<String>)

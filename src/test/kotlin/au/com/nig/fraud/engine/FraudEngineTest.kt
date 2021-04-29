@@ -1,5 +1,8 @@
-package au.com.nig.fraud
+package au.com.nig.fraud.engine
 
+import au.com.nig.fraud.engine.FraudEngine
+import au.com.nig.fraud.model.FraudResult
+import au.com.nig.fraud.model.Transaction
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.spekframework.spek2.Spek
 import org.spekframework.spek2.style.specification.describe

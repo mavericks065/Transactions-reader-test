@@ -1,6 +1,8 @@
 package au.com.nig.fraud
 
+import au.com.nig.fraud.engine.FraudEngine
 import au.com.nig.fraud.io.IO
+import au.com.nig.fraud.model.Transaction
 import java.math.BigDecimal
 
 object TransactionsAnalyzer {
