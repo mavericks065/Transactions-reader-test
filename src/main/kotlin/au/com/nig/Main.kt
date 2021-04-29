@@ -11,7 +11,7 @@ fun main(args: Array<String>) {
     val filePath = args[0]
     val threshold = BigDecimal.valueOf(args[1].toDouble())
 
-    val analysisResult = TransactionsAnalyzer.result(filePath, threshold)
+    val analysisResult = TransactionsAnalyzer.analyzeTransactions(filePath, threshold)
 
     logger.log(Level.INFO, "##### Fraudulent card number #####")
     logger.log(Level.INFO, analysisResult)

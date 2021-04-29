@@ -18,7 +18,7 @@ object TransactionsAnalyzerTest: Spek({
                 val threshold = BigDecimal.valueOf(1000.0)
 
                 // When
-                val result = TransactionsAnalyzer.result(filePath, threshold)
+                val result = TransactionsAnalyzer.analyzeTransactions(filePath, threshold)
 
                 // Then
                 assertEquals("No Fraudulent activity", result)
@@ -33,7 +33,7 @@ object TransactionsAnalyzerTest: Spek({
                 val threshold = BigDecimal.valueOf(40.0)
 
                 // When
-                val result = TransactionsAnalyzer.result(filePath, threshold)
+                val result = TransactionsAnalyzer.analyzeTransactions(filePath, threshold)
 
                 // Then
                 assertEquals("10d7ce2f43e35fa57d1bbf8b1e2", result)
@@ -46,7 +46,7 @@ object TransactionsAnalyzerTest: Spek({
                 val threshold = BigDecimal.valueOf(150.0)
 
                 // When
-                val result = TransactionsAnalyzer.result(filePath, threshold)
+                val result = TransactionsAnalyzer.analyzeTransactions(filePath, threshold)
 
                 // Then
                 assertEquals("10d7ce2f43e35fa57d1bbf8b1e2", result)
