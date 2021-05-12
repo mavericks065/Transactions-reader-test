@@ -7,7 +7,7 @@ import java.math.BigDecimal
 import java.nio.file.Path
 import java.nio.file.Paths
 
-object TransactionsAnalyzerTest: Spek({
+object TransactionsAnalyzerIntegrationTest: Spek({
     group("when reading a file and performing an analysis"){
         describe("without any fraudulent activity") {
             it("should tell us the activity is clean") {
